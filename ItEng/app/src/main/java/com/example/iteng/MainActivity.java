@@ -48,5 +48,5 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
 
     }
-
+    private 
 }
