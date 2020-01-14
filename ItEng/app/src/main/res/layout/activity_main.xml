@@ -39,13 +39,15 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" ></androidx.viewpager.widget.ViewPager>
+        android:layout_height="554dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        ></androidx.viewpager.widget.ViewPager>
 
     <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragmentContainer"/>
+        android:layout_height="699dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
@@ -54,7 +56,10 @@
         android:layout_alignParentBottom="true"
         app:layout_anchor="@+id/fragmentContainer"
         app:layout_anchorGravity="bottom|center"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu"
+
+
+        />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

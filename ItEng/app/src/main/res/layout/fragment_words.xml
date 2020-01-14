@@ -6,7 +6,14 @@
     tools:context=".WordsFragment">
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listView"/>
+        android:layout_height="646dp" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"></com.google.android.material.navigation.NavigationView>
 </RelativeLayout>

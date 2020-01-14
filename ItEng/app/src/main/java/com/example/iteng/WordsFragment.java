@@ -21,6 +21,8 @@ import java.util.ArrayList;
 public class WordsFragment extends Fragment {
     private static final String TAG ="WordsFragment";
     private ListView listView;
+
+
     public WordsFragment() {
         // Required empty public constructor
     }
@@ -58,6 +60,9 @@ public class WordsFragment extends Fragment {
         wordList.add(word10);
         wordList.add(word11);
 
+
+
+
         //создаем свой адаптер потому что у нас лист вью разделен на две части, т.е. не обычный и создаем под него класс
         WordListAdapter adapter = new WordListAdapter(requireContext(),R.layout.adapter_view_layout,wordList);
         listView.setAdapter(adapter);
@@ -65,6 +70,9 @@ public class WordsFragment extends Fragment {
 
         return view;
     }
+
+
+
 
 //    public void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);

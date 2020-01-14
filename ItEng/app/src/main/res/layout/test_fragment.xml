@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:background="@color/colorAccent"
     android:layout_height="match_parent">
 
 
+    <TextView
+        android:id="@+id/textViewTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="To compile"
+        android:layout_above="@+id/inputAnswer"
+       android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите ответ"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_below="@id/inputAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/buttonTestYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Проверить"/>
+<!--            android:onClick="confirmInput"-->
+
+        <Button
+            android:id="@+id/buttonTestNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Не помню" />
 </LinearLayout>
+
+</RelativeLayout>
